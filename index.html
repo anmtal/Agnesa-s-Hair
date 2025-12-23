@@ -7,22 +7,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .text-salon-gold { color: #d4af37; } /* Rose Gold/Gold Accents */
+        .text-salon-gold { color: #d4af37; } 
         .bg-salon-gold { background-color: #d4af37; }
-        .text-salon-beige { color: #f5f5f5; }
         .bg-salon-dark { background-color: #1a1a1a; }
         html { scroll-behavior: smooth; }
-        .hero-overlay { background: rgba(0, 0, 0, 0.5); }
+        /* Verified High-Res Background Fix */
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+            url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 <body class="bg-white font-sans text-slate-900 leading-relaxed">
 
     <nav class="bg-white border-b border-slate-100 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="text-2xl font-light tracking-[0.3em] uppercase italic text-slate-800">
-                    Agnesa's <span class="font-bold text-salon-gold">Hair</span>
-                </div>
+            <div class="text-2xl font-light tracking-[0.3em] uppercase italic text-slate-800">
+                Agnesa's <span class="font-bold text-salon-gold">Hair</span>
             </div>
             <div class="hidden lg:flex items-center space-x-10 font-medium text-slate-500 uppercase text-xs tracking-widest">
                 <a href="#about" class="hover:text-salon-gold transition">Our Story</a>
@@ -38,14 +41,11 @@
         </div>
     </nav>
 
-    <header class="relative bg-salon-dark h-[80vh] flex items-center text-white overflow-hidden">
-        <div class="absolute inset-0">
-            <img src="https://images.pexels.com/photos/3356201/pexels-photo-3356201.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Salon Interior" class="w-full h-full object-cover opacity-60">
-        </div>
+    <header class="relative hero-bg h-[80vh] flex items-center text-white overflow-hidden">
         <div class="relative max-w-7xl mx-auto px-4 text-center">
             <span class="text-salon-gold font-bold uppercase tracking-[.4em] text-sm mb-4 block">Hamilton's 5-Star Stylist</span>
             <h1 class="text-5xl md:text-7xl font-light mb-8 italic">Stunning Hair, <br><span class="font-bold not-italic">Beautifully Crafted.</span></h1>
-            <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed font-light">Experience luxury hair services with Agnesa Morina—Mississauga's premier specialist for custom color and precision cutting.</p>
+            <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed font-light">Experience luxury hair services with Agnesa Morina—Hamilton's premier specialist for custom color and precision cutting.</p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
                 <a href="#services" class="bg-salon-gold text-white px-12 py-4 rounded-full font-bold hover:bg-opacity-90 transition shadow-xl uppercase tracking-widest text-sm">View Menu</a>
                 <a href="#contact" class="bg-white text-salon-dark px-12 py-4 rounded-full font-bold hover:bg-slate-100 transition shadow-xl uppercase tracking-widest text-sm">Find Us</a>
@@ -55,45 +55,27 @@
 
     <section id="about" class="py-24 bg-slate-50">
         <div class="max-w-5xl mx-auto px-4 text-center">
-            <span class="text-salon-gold font-bold uppercase tracking-widest text-xs">The Vision</span>
             <h2 class="text-4xl font-light text-slate-800 my-6 italic">"Change for the Better"</h2>
             <p class="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
-                With over seven years of professional experience, Agnesa Morina is dedicated to providing a full range of high-end hair services. Based in Central Mountain, we specialize in transformations that reflect your unique beauty and style.
+                With over seven years of professional experience, Agnesa Morina provides a full range of high-end hair services in Central Mountain, specializing in transformations that reflect your unique beauty.
             </p>
-            <div class="mt-12 flex justify-center space-x-8 text-salon-gold text-3xl">
-                <i class="fas fa-certificate"></i>
-                <i class="fas fa-award"></i>
-                <i class="fas fa-star"></i>
-            </div>
         </div>
     </section>
 
     <section id="services" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 border border-slate-100 shadow-sm rounded-2xl hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4 text-slate-800 uppercase tracking-tighter italic">Cutting & Styling</h3>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex justify-between border-b border-slate-50 pb-2"><span>Long Haircut</span> <span class="text-salon-gold">$70+</span></li>
-                        <li class="flex justify-between border-b border-slate-50 pb-2"><span>Medium Haircut</span> <span class="text-salon-gold">$65+</span></li>
-                        <li class="flex justify-between border-b border-slate-50 pb-2"><span>Blow Dry</span> <span class="text-salon-gold">$45+</span></li>
-                    </ul>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 border border-slate-100 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-4 text-slate-800 uppercase italic">Cutting</h3>
+                    <p class="text-salon-gold font-bold">$65 - $70+</p>
                 </div>
-                <div class="bg-white p-8 border border-slate-100 shadow-sm rounded-2xl hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4 text-slate-800 uppercase tracking-tighter italic">Custom Color</h3>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex justify-between border-b border-slate-50 pb-2"><span>Partial Foil</span> <span class="text-salon-gold">$170+</span></li>
-                        <li class="flex justify-between border-b border-slate-50 pb-2"><span>Root Touch Up</span> <span class="text-salon-gold">$100+</span></li>
-                        <li class="flex justify-between border-b border-slate-50 pb-2"><span>Full Blonde</span> <span class="text-salon-gold">$260+</span></li>
-                    </ul>
+                <div class="p-8 border border-slate-100 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-4 text-slate-800 uppercase italic">Color</h3>
+                    <p class="text-salon-gold font-bold">$100 - $260+</p>
                 </div>
-                <div class="bg-white p-8 border border-slate-100 shadow-sm rounded-2xl hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-4 text-slate-800 uppercase tracking-tighter italic">Luxury Care</h3>
-                    <ul class="space-y-3 text-slate-600">
-                        <li class="flex justify-between border-b border-slate-50 pb-2"><span>Extensions</span> <span class="text-salon-gold">$150+</span></li>
-                        <li class="flex justify-between border-b border-slate-50 pb-2"><span>Hair Mask</span> <span class="text-salon-gold">$10+</span></li>
-                        <li class="flex justify-between border-b border-slate-50 pb-2"><span>Consultation</span> <span class="text-salon-gold">FREE</span></li>
-                    </ul>
+                <div class="p-8 border border-slate-100 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-4 text-slate-800 uppercase italic">Care</h3>
+                    <p class="text-salon-gold font-bold">$10 - $150+</p>
                 </div>
             </div>
         </div>
@@ -103,44 +85,22 @@
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
             <div class="text-left">
                 <h2 class="text-4xl font-light mb-8 italic">Visit the <span class="font-bold not-italic">Studio</span></h2>
-                <div class="space-y-8">
-                    <div class="flex items-start">
-                        <i class="fas fa-location-dot text-salon-gold mt-1 mr-4 text-xl"></i>
-                        <div>
-                            <p class="font-bold text-slate-800">1050 Upper Gage Avenue</p>
-                            <p class="text-slate-500">Central Mountain, Hamilton, ON L8V 5B7</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <i class="fas fa-clock text-salon-gold mt-1 mr-4 text-xl"></i>
-                        <div>
-                            <p class="font-bold text-slate-800 italic uppercase">Studio Hours</p>
-                            <p class="text-slate-500">Tue, Wed, Fri: 10AM - 7PM</p>
-                            <p class="text-slate-500">Thu: 10AM - 5PM | Sat: 9AM - 4PM</p>
-                        </div>
-                    </div>
-                    <a href="tel:4377790762" class="inline-block bg-salon-dark text-white px-10 py-4 rounded-full font-bold hover:bg-black transition shadow-lg uppercase tracking-widest text-xs">
+                <div class="space-y-6">
+                    <p class="font-bold text-slate-800">1050 Upper Gage Avenue, Hamilton, ON L8V 5B7</p>
+                    <p class="text-slate-500 font-bold uppercase tracking-widest text-sm">Tue-Fri: 10AM-7PM | Sat: 9AM-4PM</p>
+                    <a href="tel:4377790762" class="inline-block bg-salon-dark text-white px-10 py-4 rounded-full font-bold shadow-lg uppercase tracking-widest text-xs">
                         Call (437) 779-0762
                     </a>
                 </div>
             </div>
             <div class="rounded-3xl shadow-2xl overflow-hidden h-[450px]">
                 <iframe 
-                    src="https://www.google.com/maps/contrib/116758099249102945974/reviews" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.729188047976!2d-79.8454228!3d43.2151745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c99ceb975a5eb%3A0x685bc1523bb979a9!2s1050%20Upper%20Gage%20Ave%2C%20Hamilton%2C%20ON%20L8V%205B7!5e0!3m2!1sen!2sca!4v1703280000000!5m2!1sen!2sca" 
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
         </div>
     </section>
-
-    <footer class="bg-white py-12 border-t border-slate-100 text-center">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-xl font-light tracking-[.3em] uppercase italic text-slate-400 mb-6">
-                Agnesa's <span class="font-bold text-salon-gold opacity-50">Hair</span>
-            </div>
-            <p class="text-xs text-slate-400 uppercase tracking-widest italic">© 2025 Agnesa's Hair. Professionally Designed by Prime Web Designs.</p>
-        </div>
-    </footer>
 
 </body>
 </html>
