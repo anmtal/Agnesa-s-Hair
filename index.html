@@ -3,51 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Sombre Hair & Beauty</title>
+    <title>Sombre Hair & Beauty | Hamilton Luxury Salon</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        /* Sombre Brand Palette */
         .text-sombre-gold { color: #b08d57; } 
         .bg-sombre-gold { background-color: #b08d57; }
         .bg-sombre-cream { background-color: #f9f7f2; }
-        .service-row { display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding-bottom: 1rem; margin-bottom: 1.5rem; align-items: flex-end; }
-        .time-label { font-size: 0.7rem; color: #aaa; font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 4px; }
+        .text-sombre-slate { color: #4a4a4a; }
+        html { scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+            url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center;
+        }
     </style>
 </head>
-<body class="bg-sombre-cream font-sans text-slate-800">
+<body class="bg-sombre-cream font-sans text-sombre-slate leading-relaxed">
 
-    <nav class="bg-white border-b border-slate-100 py-4 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <a href="index.html">
-                <img src="Logo.jpg" alt="Logo" class="h-14 w-auto object-contain">
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="Logo.jpg" alt="Sombre Hair & Beauty Logo" class="h-16 w-auto object-contain">
             </a>
-            <div class="text-sm font-bold tracking-[0.3em] uppercase text-sombre-gold">Menu</div>
+            
+            <div class="hidden lg:flex items-center space-x-8 font-medium text-slate-500 uppercase text-xs tracking-widest">
+                <a href="#about" class="hover:text-sombre-gold transition">Our Story</a>
+                <a href="services.html" class="hover:text-sombre-gold transition">Services</a>
+                <a href="#contact" class="hover:text-sombre-gold transition">Contact</a>
+                <div class="flex space-x-4 border-l pl-6 border-slate-200 text-lg">
+                    <a href="https://www.tiktok.com/@agnesas.hair" target="_blank" class="hover:text-sombre-gold"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/agnesa.morina.9847" target="_blank" class="hover:text-sombre-gold"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/agnesa__hair/" target="_blank" class="hover:text-sombre-gold"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <a href="https://www.fresha.com/a/agnesas-hair-hamilton-1221-limeridge-road-east-ktdmgu8b/booking" target="_blank" class="bg-sombre-gold text-white px-8 py-3 rounded-full font-bold text-sm uppercase shadow-md hover:opacity-90 transition">Book Now</a>
         </div>
     </nav>
 
-    <div class="max-w-4xl mx-auto px-4 py-20">
-        <div class="mb-20">
-            <h2 class="text-3xl font-light mb-12 border-b border-sombre-gold pb-4 uppercase">Hair Cutting</h2>
-            <div class="grid gap-2">
-                <div class="service-row"><div><span class="time-label">1 hr</span>Long hair cut</div><span class="font-bold text-sombre-gold">from $70</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span>Medium Haircut</div><span class="font-bold text-sombre-gold">from $65</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span>Short hair Cut</div><span class="font-bold text-sombre-gold">from $60</span></div>
+    <header class="relative hero-bg h-[75vh] flex items-center text-white text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-6xl md:text-8xl font-light mb-6 uppercase tracking-tighter">Sombre</h1>
+            <p class="text-xl md:text-2xl mb-10 tracking-[0.4em] uppercase opacity-90">Hair & Beauty</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="services.html" class="bg-sombre-gold text-white px-12 py-4 rounded-full font-bold shadow-xl uppercase tracking-widest text-sm text-center">View Menu</a>
+                <a href="#about" class="bg-white text-sombre-slate px-12 py-4 rounded-full font-bold shadow-xl uppercase tracking-widest text-sm text-center">Our Story</a>
             </div>
         </div>
+    </header>
 
-        <div class="mb-20">
-            <h2 class="text-3xl font-light mb-12 border-b border-sombre-gold pb-4 uppercase">Bespoke Coloring</h2>
-            <div class="grid gap-2">
-                <div class="service-row"><div><span class="time-label">4 hrs 30 mins</span>Full blonde highlights</div><span class="font-bold text-sombre-gold">from $260</span></div>
-                <div class="service-row"><div><span class="time-label">4 hrs</span>Balayage Color And Cut</div><span class="font-bold text-sombre-gold">from $260</span></div>
-                <div class="service-row"><div><span class="time-label">2 hrs</span>Root touch up and Cut</div><span class="font-bold text-sombre-gold">from $110</span></div>
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-sombre-gold font-bold uppercase tracking-widest text-sm mb-4">"Change for the Better"</h2>
+            <h3 class="text-4xl mb-8 font-light uppercase tracking-tight italic">The Art of Sombre</h3>
+            <p class="text-slate-600 leading-relaxed text-lg">
+                With over seven years of professional experience, Agnesa Morina brings a bespoke approach to hair artistry. Specializing in precision color and modern styling, we create looks that are as unique as our clients.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-sombre-cream">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+            <div class="text-left text-left">
+                <h2 class="text-4xl font-light mb-8 uppercase tracking-wide">Studio <span class="font-bold text-sombre-gold">Location</span></h2>
+                <div class="space-y-8">
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-2">New Address</p>
+                        <p class="font-bold text-sombre-slate text-xl">1221 Limeridge Road East<br>Hamilton, ON L8W 1W9</p>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-2">Contact</p>
+                        <a href="tel:6475514861" class="text-2xl font-bold text-sombre-gold hover:underline">(647) 551-4861</a>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-widest text-slate-400 mb-2">Hours</p>
+                        <p class="text-sombre-slate font-medium">Tue-Fri: 10AM - 7PM<br>Sat: 9AM - 4PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-3xl shadow-2xl overflow-hidden h-[500px] border-8 border-white">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.203023472305!2d-79.83296092342893!3d43.20520627112615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9066601665eb%3A0x6b5bc932f9b979a9!2s1221%20Limeridge%20Rd%20E%2C%20Hamilton%2C%20ON%20L8W%201W9!5e0!3m2!1sen!2sca!4v1704211200000!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
+    </section>
 
-        <div class="text-center">
-            <a href="https://www.fresha.com/a/agnesas-hair-hamilton-1221-limeridge-road-east-ktdmgu8b/booking" target="_blank" class="bg-sombre-gold text-white px-16 py-5 rounded-full font-bold shadow-xl uppercase tracking-widest hover:brightness-110 transition inline-block">Book Experience</a>
+    <footer class="bg-white py-16 text-center border-t border-slate-100">
+        <img src="Logo.jpg" alt="Sombre Hair & Beauty Logo" class="h-24 mx-auto mb-8 opacity-80">
+        <div class="flex justify-center space-x-8 mb-8 text-slate-400 text-2xl text-center">
+            <a href="https://www.tiktok.com/@agnesas.hair" target="_blank" class="hover:text-sombre-gold transition"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/agnesa.morina.9847" target="_blank" class="hover:text-sombre-gold transition"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/agnesa__hair/" target="_blank" class="hover:text-sombre-gold transition"><i class="fab fa-instagram"></i></a>
         </div>
-    </div>
+        <p class="text-xs text-slate-300 uppercase tracking-widest italic">© 2026 Sombre Hair & Beauty. Built by Prime Web Designs.</p>
+    </footer>
 
 </body>
 </html>
