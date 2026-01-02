@@ -3,131 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services & Booking | Agnesa's Hair Hamilton</title>
+    <title>Services | Sombre Hair & Beauty</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .text-salon-gold { color: #d4af37; } 
-        .bg-salon-gold { background-color: #d4af37; }
-        .service-row { display: flex; justify-content: space-between; border-bottom: 1px solid #f1f5f9; padding-bottom: 0.75rem; margin-bottom: 1.25rem; align-items: flex-end; }
-        .time-label { font-size: 0.7rem; color: #94a3b8; font-weight: 800; text-transform: uppercase; margin-bottom: 2px; display: block; letter-spacing: 0.05em; }
-        .service-name { font-weight: 600; font-size: 1.05rem; color: #1e293b; }
-        .price-tag { font-weight: 700; color: #d4af37; font-size: 1rem; }
+        /* Sombre Brand Palette */
+        .text-sombre-gold { color: #b08d57; } 
+        .bg-sombre-gold { background-color: #b08d57; }
+        .bg-sombre-cream { background-color: #f9f7f2; }
+        .text-sombre-slate { color: #4a4a4a; }
+        
+        .service-row { display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding-bottom: 1rem; margin-bottom: 1.5rem; align-items: flex-end; }
+        .time-label { font-size: 0.7rem; color: #999; font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 4px; }
+        .price-text { font-weight: 700; color: #b08d57; font-size: 1.1rem; }
         html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-slate-50 font-sans text-slate-900 leading-relaxed">
+<body class="bg-sombre-cream font-sans text-sombre-slate leading-relaxed">
 
-    <nav class="bg-white border-b border-slate-100 py-6 sticky top-0 z-50">
+    <nav class="bg-white border-b border-slate-100 py-4 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <a href="index.html" class="text-salon-gold font-bold uppercase text-sm tracking-widest hover:opacity-75 transition"><i class="fas fa-arrow-left mr-2"></i> Home</a>
-            <div class="text-xl font-light tracking-[0.2em] uppercase italic">Service <span class="font-bold text-salon-gold">Menu</span></div>
+            <a href="index.html" class="flex items-center">
+                <div class="h-12 w-12 rounded-full overflow-hidden border border-slate-100">
+                    <img src="Logo.jpg" alt="Sombre Logo" class="h-full w-full object-cover">
+                </div>
+            </a>
+            <div class="text-sm font-bold tracking-[0.3em] uppercase text-sombre-gold">
+                Service <span class="font-light">Menu</span>
+            </div>
         </div>
     </nav>
 
     <div class="max-w-4xl mx-auto px-4 py-16">
         
         <div class="mb-20">
-            <h2 class="text-2xl font-bold mb-10 border-b-2 border-salon-gold inline-block italic uppercase">Hair Cutting</h2>
+            <h2 class="text-3xl font-light mb-10 border-b border-sombre-gold pb-4 uppercase tracking-tighter italic">Hair Cutting</h2>
             <div class="grid gap-2">
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Long hair cut</span></div><span class="price-tag">from $70</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Medium Haircut</span></div><span class="price-tag">from $65</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Short hair Cut</span></div><span class="price-tag">from $60</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Girls cut 10+</span></div><span class="price-tag">from $40</span></div>
-                <div class="service-row"><div><span class="time-label">30 mins</span><span class="service-name">Man's haircut</span></div><span class="price-tag">from $30</span></div>
-                <div class="service-row"><div><span class="time-label">40 mins</span><span class="service-name">Kids haircut</span></div><span class="price-tag">from $25</span></div>
-                <div class="service-row"><div><span class="time-label">15 mins</span><span class="service-name">Bang trim</span></div><span class="price-tag">from $10</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Girls cut 10+</div><span class="price-text">from $40</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Short hair Cut</div><span class="price-text">from $60</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Long hair cut</div><span class="price-text">from $70</span></div>
+                <div class="service-row"><div><span class="time-label">15 mins</span>Bang trim</div><span class="price-text">from $10</span></div>
+                <div class="service-row"><div><span class="time-label">40 mins</span>Kids haircut</div><span class="price-text">from $25</span></div>
+                <div class="service-row"><div><span class="time-label">30 mins</span>Man's haircut</div><span class="price-text">from $30</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Medium Haircut</div><span class="price-text">from $65</span></div>
             </div>
         </div>
 
         <div class="mb-20">
-            <h2 class="text-2xl font-bold mb-10 border-b-2 border-salon-gold inline-block italic uppercase">Hair Coloring</h2>
+            <h2 class="text-3xl font-light mb-10 border-b border-sombre-gold pb-4 uppercase tracking-tighter italic">Bespoke Coloring</h2>
             <div class="grid gap-2">
-                <div class="service-row"><div><span class="time-label">4 hrs 30 mins</span><span class="service-name">Full blonde highlights</span></div><span class="price-tag">from $260</span></div>
-                <div class="service-row"><div><span class="time-label">4 hrs</span><span class="service-name">Balayage Color And Cut</span></div><span class="price-tag">from $260</span></div>
-                <div class="service-row"><div><span class="time-label">3 hrs 30 mins</span><span class="service-name">Balayage Colour No Cut</span></div><span class="price-tag">from $250</span></div>
-                <div class="service-row"><div><span class="time-label">3 hrs 30 mins</span><span class="service-name">Balayage No Cut</span></div><span class="price-tag">from $230</span></div>
-                <div class="service-row"><div><span class="time-label">4 hrs</span><span class="service-name">Full foil colour and cut</span></div><span class="price-tag">from $240</span></div>
-                <div class="service-row"><div><span class="time-label">2 hrs</span><span class="service-name">Root touch up and Cut</span></div><span class="price-tag">from $110</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Toner And Blow Dry</span></div><span class="price-tag">from $70</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Price per foil</span></div><span class="price-tag">$8</span></div>
+                <div class="service-row"><div><span class="time-label">4 hrs 30 mins</span>Full blonde highlights</div><span class="price-text">from $260</span></div>
+                <div class="service-row"><div><span class="time-label">4 hrs</span>Balayage Color And Cut</div><span class="price-text">from $260</span></div>
+                <div class="service-row"><div><span class="time-label">3 hrs 30 mins</span>Balayage Colour No Cut</div><span class="price-text">from $250</span></div>
+                <div class="service-row"><div><span class="time-label">3 hrs 15 mins</span>Colour Partial And Cut</div><span class="price-text">from $190</span></div>
+                <div class="service-row"><div><span class="time-label">2 hrs</span>Root touch up and Cut</div><span class="price-text">from $110</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Toner And Blow Dry</div><span class="price-text">from $70</span></div>
+                <div class="service-row"><div><span class="time-label">2 hrs 30 mins</span>Scalp Bleach And Cut</div><span class="price-text">from $180</span></div>
+                <div class="service-row"><div><span class="time-label">4 hrs</span>Colour Correction</div><span class="price-text">from $300</span></div>
             </div>
         </div>
 
         <div class="mb-20">
-            <h2 class="text-2xl font-bold mb-10 border-b-2 border-salon-gold inline-block italic uppercase">Hairstyling & Care</h2>
+            <h2 class="text-3xl font-light mb-10 border-b border-sombre-gold pb-4 uppercase tracking-tighter italic">Styling & Luxury Care</h2>
             <div class="grid gap-2">
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Updo</span></div><span class="price-tag">$80</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Long hair blow dry</span></div><span class="price-tag">from $50</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Keratin Bond Install & Remove</span></div><span class="price-tag">from $150</span></div>
-                <div class="service-row"><div><span class="time-label">3 hrs</span><span class="service-name">Cezanne treatment</span></div><span class="price-tag">from $300</span></div>
-                <div class="service-row"><div><span class="time-label">1 hr</span><span class="service-name">Olaplex treatment</span></div><span class="price-tag">from $40</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Updo</div><span class="price-text">$80</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Long hair blow dry</div><span class="price-text">from $50</span></div>
+                <div class="service-row"><div><span class="time-label">3 hrs</span>Cezanne treatment</div><span class="price-text">from $300</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Olaplex treatment</div><span class="price-text">from $40</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Keratin Bond Install & Remove</div><span class="price-text">from $150</span></div>
+                <div class="service-row"><div><span class="time-label">1 hr</span>Makeup</div><span class="price-text">from $80</span></div>
             </div>
         </div>
 
-        <section id="book" class="py-12 bg-white rounded-3xl shadow-sm p-8 md:p-12 border border-slate-100">
-            <div class="text-center mb-10">
-                <h2 class="text-4xl font-light italic uppercase italic text-center">Secure <span class="font-bold not-italic">Appointment</span></h2>
-                <p class="text-slate-400 mt-2 font-medium text-center">Select your service. We will contact you to confirm.</p>
-            </div>
-
-            <form action="https://formspree.io/f/mkowkapo" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input type="text" name="name" placeholder="Full Name" required class="w-full p-4 rounded-xl border border-slate-200 outline-none focus:ring-2 focus:ring-salon-gold">
-                <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-4 rounded-xl border border-slate-200 outline-none focus:ring-2 focus:ring-salon-gold">
-                
-                <div class="md:col-span-1">
-                    <label class="block text-xs font-bold uppercase text-slate-400 mb-2 ml-2">Category</label>
-                    <select id="categorySelect" name="category" onchange="updateSubServices()" class="w-full p-4 rounded-xl border border-slate-200 bg-white outline-none">
-                        <option value="">Choose Category...</option>
-                        <option value="cutting">Hair Cutting</option>
-                        <option value="coloring">Hair Coloring</option>
-                        <option value="styling">Hairstyling/Care</option>
-                    </select>
-                </div>
-
-                <div class="md:col-span-1">
-                    <label class="block text-xs font-bold uppercase text-slate-400 mb-2 ml-2">Exact Service</label>
-                    <select id="serviceSelect" name="exact_service" class="w-full p-4 rounded-xl border border-slate-200 bg-white outline-none">
-                        <option value="">Select Category First</option>
-                    </select>
-                </div>
-
-                <div class="md:col-span-2">
-                    <label class="block text-xs font-bold uppercase text-slate-400 mb-2 ml-2">Preferred Date & Time</label>
-                    <input type="datetime-local" name="appointment_time" required class="w-full p-4 rounded-xl border border-slate-200 bg-white outline-none">
-                </div>
-
-                <button type="submit" class="md:col-span-2 bg-salon-gold text-white px-16 py-4 rounded-full font-bold shadow-xl uppercase tracking-widest hover:bg-[#c5a02d] transition-all">Request Appointment</button>
-            </form>
-        </section>
+        <div class="text-center bg-white p-12 rounded-3xl shadow-sm border border-slate-100">
+            <h3 class="text-3xl font-light mb-6 uppercase tracking-widest italic">Ready to <span class="font-bold">Transform?</span></h3>
+            <p class="text-slate-400 mb-10 max-w-lg mx-auto uppercase text-xs tracking-widest font-bold">Secure your preferred slot instantly through our official booking partner.</p>
+            <a href="https://www.fresha.com/a/agnesas-hair-hamilton-1221-limeridge-road-east-ktdmgu8b/booking" target="_blank" class="bg-sombre-gold text-white px-16 py-5 rounded-full font-bold shadow-xl uppercase tracking-widest hover:brightness-110 transition inline-block">
+                Book on Fresha
+            </a>
+        </div>
     </div>
 
-    <section class="h-[400px] w-full">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.5670860867086!2d-79.8451381!3d43.2185244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c99cebbbd65eb%3A0x865bc1523bb479a9!2s1050%20Upper%20Gage%20Ave%2C%20Hamilton%2C%20ON%20L8V%205B7!5e0!3m2!1sen!2sca!4v1711200000000!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <script>
-        const services = {
-            cutting: ["Long hair cut (1 hr)", "Medium Haircut (1 hr)", "Short hair Cut (1 hr)", "Man's haircut (30 mins)", "Kids haircut (40 mins)", "Bang trim (15 mins)"],
-            coloring: ["Full blonde highlights (4.5 hrs)", "Balayage Color And Cut (4 hrs)", "Full foil colour (4 hrs)", "Root touch up (2 hrs)", "Toner (1 hr)"],
-            styling: ["Updo (1 hr)", "Long hair blow dry (1 hr)", "Curls (1 hr)", "Cezanne treatment (3 hrs)", "Olaplex (1 hr)"]
-        };
-
-        function updateSubServices() {
-            const category = document.getElementById("categorySelect").value;
-            const serviceSelect = document.getElementById("serviceSelect");
-            serviceSelect.innerHTML = "";
-            if (services[category]) {
-                services[category].forEach(s => {
-                    let option = document.createElement("option");
-                    option.value = s; option.text = s;
-                    serviceSelect.appendChild(option);
-                });
-            } else {
-                serviceSelect.innerHTML = "<option>Select Category First</option>";
-            }
-        }
-    </script>
+    <footer class="bg-white py-12 text-center border-t border-slate-100">
+        <div class="h-16 w-16 rounded-full overflow-hidden mx-auto mb-6 opacity-80">
+            <img src="Logo.jpg" alt="Sombre Logo" class="h-full w-full object-cover">
+        </div>
+        <p class="text-xs text-slate-300 uppercase tracking-widest">© 2026 Sombre Hair & Beauty. Built by Prime Web Designs.</p>
+    </footer>
 
 </body>
 </html>
