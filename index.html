@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* Sombre Brand Palette based on logo */
+        /* Sombre Brand Palette */
         .text-sombre-gold { color: #b08d57; } 
         .bg-sombre-gold { background-color: #b08d57; }
         .bg-sombre-cream { background-color: #f9f7f2; }
@@ -24,8 +24,11 @@
 
     <nav class="bg-white border-b border-slate-100 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            
             <a href="index.html" class="flex items-center">
-                <img src="Logo.jpg" alt="Sombre Hair & Beauty" class="h-16 w-auto object-contain">
+                <div class="h-16 w-16 rounded-full overflow-hidden border border-slate-100">
+                    <img src="Logo.jpg" alt="Sombre Hair & Beauty" class="h-full w-full object-cover">
+                </div>
             </a>
             
             <div class="hidden lg:flex items-center space-x-8 font-medium text-slate-500 uppercase text-xs tracking-widest">
@@ -38,6 +41,7 @@
                     <a href="https://www.instagram.com/sombre.hair/" target="_blank" class="hover:text-sombre-gold"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
+            
             <a href="https://www.fresha.com/a/agnesas-hair-hamilton-1221-limeridge-road-east-ktdmgu8b/booking" target="_blank" class="bg-sombre-gold text-white px-8 py-3 rounded-full font-bold text-sm uppercase shadow-md hover:opacity-90 transition">Book Now</a>
         </div>
     </nav>
@@ -83,19 +87,21 @@
                 </div>
             </div>
             <div class="rounded-3xl shadow-2xl overflow-hidden h-[500px] border-8 border-white">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.412123512845!2d-79.8454!3d43.2114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c904772b22641%3A0xb485725229347959!2s1221%20Limeridge%20Rd%20E%2C%20Hamilton%2C%20ON%20L8W%201W9!5e0!3m2!1sen!2sca!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.232356550974!2d-79.8338927!3d43.2151613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c99f92d53b207%3A0xc685bc9239b479a5!2s1221%20Limeridge%20Rd%20E%2C%20Hamilton%2C%20ON%20L8W%201W9!5e0!3m2!1sen!2sca!4v1710000000000!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <footer class="bg-white py-16 text-center border-t border-slate-100">
-        <img src="Logo.jpg" alt="Sombre Hair & Beauty Logo" class="h-24 mx-auto mb-8 opacity-80">
-        <div class="flex justify-center space-x-8 mb-8 text-slate-400 text-2xl">
+        <div class="h-24 w-24 rounded-full overflow-hidden mx-auto mb-8 opacity-80 border border-slate-100 shadow-sm">
+            <img src="Logo.jpg" alt="Sombre Hair & Beauty Logo" class="h-full w-full object-cover">
+        </div>
+        <div class="flex justify-center space-x-8 mb-8 text-slate-400 text-2xl text-center">
             <a href="https://www.tiktok.com/@agnesas.hair" target="_blank" class="hover:text-sombre-gold transition"><i class="fab fa-tiktok"></i></a>
             <a href="https://www.facebook.com/agnesa.morina.9847" target="_blank" class="hover:text-sombre-gold transition"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/sombre.hair/" target="_blank" class="hover:text-sombre-gold transition"><i class="fab fa-instagram"></i></a>
         </div>
-        <p class="text-xs text-slate-300 uppercase tracking-widest italic">© 2026 Sombre Hair & Beauty. Crafted by Prime Web Designs.</p>
+        <p class="text-xs text-slate-300 uppercase tracking-widest italic text-center">© 2026 Sombre Hair & Beauty. Crafted by Prime Web Designs.</p>
     </footer>
 
 </body>
