@@ -13,7 +13,6 @@
         .bg-sombre-cream { background-color: #f9f7f2; }
         .text-sombre-slate { color: #4a4a4a; }
         
-        /* Service Menu Styling */
         .service-row { display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding-bottom: 1rem; margin-bottom: 1.5rem; align-items: flex-end; }
         .time-label { font-size: 0.65rem; color: #999; font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 4px; }
         .price-text { font-weight: 700; color: #b08d57; font-size: 1rem; }
@@ -23,23 +22,25 @@
 <body class="bg-sombre-cream font-sans text-sombre-slate leading-relaxed">
 
     <nav class="bg-white border-b border-slate-100 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex flex-col lg:flex-row justify-between items-center gap-4">
+        <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex flex-col md:flex-row justify-between items-center gap-4">
             
             <a href="index.html" class="flex items-center space-x-4">
                 <div class="h-12 w-12 sm:h-14 sm:w-14 rounded-full overflow-hidden border border-slate-100 shadow-sm flex-shrink-0">
                     <img src="Logo.jpg" alt="Sombre Logo" class="h-full w-full object-cover">
                 </div>
                 <div class="flex flex-col text-left">
-                    <span class="text-lg sm:text-xl font-bold tracking-[0.2em] uppercase leading-none">Sombre</span>
+                    <span class="text-xl sm:text-2xl font-bold tracking-[0.2em] uppercase leading-none">Sombre</span>
                     <span class="text-[0.6rem] sm:text-[0.7rem] tracking-[0.4em] uppercase text-slate-400 font-bold mt-1">Hair & Beauty</span>
                 </div>
             </a>
             
-            <div class="text-xs sm:text-sm font-bold tracking-[0.3em] uppercase text-sombre-gold italic text-center">
+            <div class="text-[0.65rem] sm:text-xs font-bold tracking-[0.3em] uppercase text-sombre-gold italic text-center">
                 Service <span class="font-light">Menu</span>
             </div>
 
-            <a href="index.html" class="hidden lg:block text-xs uppercase tracking-widest font-bold text-slate-400 hover:text-sombre-gold transition">Back to Home</a>
+            <a href="index.html" class="text-[0.65rem] sm:text-xs uppercase tracking-widest font-bold text-slate-400 hover:text-sombre-gold transition">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Home
+            </a>
         </div>
     </nav>
 
@@ -85,7 +86,7 @@
         </div>
 
         <div class="text-center bg-white p-8 sm:p-12 rounded-3xl shadow-sm border border-slate-100">
-            <h3 class="text-2xl sm:text-3xl font-light mb-4 sm:mb-6 uppercase tracking-widest italic">Book Your <span class="font-bold">Session</span></h3>
+            <h3 class="text-2xl sm:text-3xl font-light mb-4 sm:mb-6 uppercase tracking-widest italic text-sombre-slate">Book Your <span class="font-bold">Session</span></h3>
             <p class="text-slate-400 mb-8 sm:mb-10 max-w-lg mx-auto uppercase text-[0.6rem] sm:text-xs tracking-[0.2em] font-bold">Secure your preferred slot through our official Fresha portal.</p>
             <a href="https://www.fresha.com/a/agnesas-hair-hamilton-1221-limeridge-road-east-ktdmgu8b/booking" target="_blank" class="bg-sombre-gold text-white px-10 py-4 sm:px-16 sm:py-5 rounded-full font-bold shadow-xl uppercase tracking-widest text-xs sm:text-sm hover:brightness-110 transition inline-block">
                 Book on Fresha
